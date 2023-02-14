@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>welcome to dragon travels</title>
+</head>
+
+<body>
+  <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+    <strong>success!</strong> your request has been successfully submited.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <span aria-hidden="true">&times;</span>
+  </div>
+  
+  <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+    <strong>Error!</strong> your travel request has not been sent due to errors.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <span aria-hidden="true">&times;</span>
+  </div>
+
+
+  <div class="container">
+    <h1>Travel partner</h1>
+    
+    <form>
+      <div class="form-group">
+        <label for="email">Username</label>
+        <input type="text" class="form-control is-invalid" id="name9" placeholder="Enter your Username">
+        <!-- <div class="invalid-feedback">this is wrong</div> -->
+        <small id="namevalid" class="from-text text-muted invalid-feedback">
+          your username must be 2-10 characters long and should not start with a number
+         </small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter your email.">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+        <small id="emailvalid" class="from-text text-muted invalid-feedback">
+          your email must be a valid email
+        </small>
+      </div>
+      <!-- <button class="btn-primary">submit</button> -->
+      
+      <div class="form-group">
+
+        <label for="car">Select your car</label>
+        <select class="form-control" id="car">
+          <option>rolls royls</option>
+          <option>lembo</option>
+          <option>tata moters</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+        <label for="address">Enter your address</label>
+        <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+      </div>
+      <div class=" form-group" my-2>
+        <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+        <label for="address">Enter your phone number</label>
+        <input class="form-control" name="phone" id="phone" rows="3"> </input>
+        <small id="phonevalid" class="from-text text-muted invalid-feedback">
+          your phone number must be 10-digit long
+        </small>
+      </div>
+      <button id="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js1/project4.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
